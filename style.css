@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.container{
+    width: 650px;
+    height: 330px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    border-radius: 20px;
+}
+h1, h3{
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: .7rem;
+    color: hsl(184, 14%, 56%);
+}
+#dollar, #person{
+    margin-left: 30px;
+    width: 260px;
+    height: 30px;
+    margin-top: 10px;
+    text-align: right;
+    font-size: 1.3rem;
+    padding-right: 10px;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    background-image: url("images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position: 5%;
+    border: none;
+}
+#dollar:focus, #person:focus{
+    outline-color: hsl(184, 14%, 56%);
+}
+.person{
+    background-image: url("images/icon-person.svg");
+}
+h2{
+    font-size: .7rem;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: hsl(184, 14%, 56%);
+}
+
+.flex{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#another-flex{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#five, #ten, #fifteen, #twenty, #custom, #fifty{
+    width: 80px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#five:hover, #ten:hover, #fifteen:hover, #twenty:hover, #fifty:hover{
+    background-color: #9fe8df;
+    color: hsl(183, 100%, 15%);
+}
+#twenty{
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 0;
+}
+#fifty{
+    margin-right: 0;
+}
+#custom{
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    color: hsl(184, 14%, 56%);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+.result{
+    background-color: hsl(183, 100%, 15%);
+    width: 300px;
+    height: 290px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 12px;
+}
+h4, h5{
+    margin-top: 30px;
+    margin-left: 20px;
+    color: hsl(185, 41%, 84%);
+    font-size: .7rem;
+}
+h5{
+    margin-top: 20px;
+}
+p{
+    margin-left: 20px;
+    font-size: .7rem;
+    color: hsl(186, 14%, 43%);
+}
+h6{
+    text-align: right;
+    font-size: 2.2rem;
+    color: hsl(186, 14%, 43%);
+    margin-right: 30px;
+    margin-top: -30px;
+}
+#btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 40px;
+    margin-top: 80px;
+    background-color: #0d686d;
+    border: none;
+    color: #055c63;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: #9fe8df;
+    color: #0c4b48;
+}
+#error{
+    font-size: .7rem;
+    float: right;
+    margin-right: 90px;
+    margin-top: -15px;
+    margin-left: 20px;
+    color: red;
+}
+@media (max-width: 555px){
+    body{
+        overflow-x: hidden;
+    }
+    .container{
+        display: block;
+        height: 650px;
+        width: 350px;
+        margin-bottom: 50px;
+    }
+    .inputs{
+        width: 300px;
+    }
+    #dollar{
+        width: 290px;
+    }
+    #person{
+        width: 290px;
+    }
+    .result{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 300px;
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+    h4, h5{
+        margin-top: 30px;
+    }
+    #btn{
+        margin-top: 20px;
+    }
+    .flex{
+        width: 420px;
+    }
+    #five, #ten, #fifteen, #twenty, #fifty, #custom{
+        width: 90px;
+        height: 40px;
+    }
+    #custom{
+        float: left;
+        margin-left: 230px;
+        margin-top: -40px;
+    }
+}
